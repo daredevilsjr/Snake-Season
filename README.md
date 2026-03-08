@@ -103,7 +103,7 @@ snake-seasons-game
 1. Clone the repository
 
 ```
-git clone https://github.com/daredevilsjr/snake-season.git
+git clone https://github.com/daredevilsjr/Snake-Season.git
 ```
 
 2. Open the project folder
