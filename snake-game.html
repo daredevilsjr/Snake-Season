@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Snake Seasons</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game">
+      <h2>🐍 Snake Season</h2>
+
+      <div class="top">
+        <div>Score: <span id="score">0</span></div>
+        <div>High: <span id="high">0</span></div>
+      </div>
+
+      <canvas id="gameCanvas"></canvas>
+
+      <div class="season">Season: <span id="seasonName">Spring</span></div>
+
+      <div class="menu">
+        <select id="difficulty">
+          <option value="220" selected>Easy</option>
+          <option value="180">Medium</option>
+          <option value="140">Hard</option>
+        </select>
+
+        <button onclick="startGame()">Start</button>
+        <button onclick="pauseGame()">Pause</button>
+      </div>
+
+      <div class="controls">
+        Enter = Start | Space = Pause | WASD / Arrows = Move
+      </div>
+
+      <div class="popup" id="gameOverBox">
+        <h3 id="gameOverText">Game Over</h3>
+        <p id="scoreMsg"></p>
+        <button onclick="reset()">Play Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
